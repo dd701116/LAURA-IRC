@@ -1,0 +1,28 @@
+<section id="share_video" class="popup bg_white">
+	<div class="popup_header">
+		<h2>Share video</h2>
+	</div>
+	<div class="popup_content">
+		<input type="text" name="url" placeholder="http://host/video" id="share_video_url" class="input">
+
+		<select name="share_video_type" id="share_video_type" class="input">
+		    <option value="video/mp4">video/mp4</option>
+		    <option value="video/ogg">video/ogg</option>
+		    <option value="video/webm">video/webm</option>
+		</select>
+
+		<video poster="img/share_video-icon.png" id="share_video_preview" class="popup_preview" controls>
+			<source src="#" type='#' id="share_video_preview_source">
+			<p>Waiting url...</p>
+		</video>
+
+		<div class="button_action">
+    		<button onclick="share(event, 'share_video')">Share</button>
+    		<button onclick="closePopup(event, 'share_video')">Cancel</button>
+    	</div>
+
+	</div>
+	
+	<div class="popup_footer">
+	</div>
+</section>

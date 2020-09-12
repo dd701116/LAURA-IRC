@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<link rel="stylesheet" type="text/css" href="css/tab.css">
+	<link rel="stylesheet" type="text/css" href="css/popup.css">
+	<link rel="stylesheet" type="text/css" href="css/chat.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<meta charset="utf-8">
+
+	<title>CLIENT</title>
+
+
+</head>
+<body>
+
+	<header>
+		<h1>LAURA.IRC</h1>
+		<p><b>(Open beta)</b></p>
+
+		<nav class="tab">
+
+			<!-- left -->
+			<button class="tablinks viewlinks left active" onclick="openView(event, 'home')">Home</button>
+			<button class="tablinks viewlinks left" onclick="openView(event, 'create_room')">Create room</button>
+			<button class="tablinks viewlinks left" onclick="openView(event, 'manage_room')">Manage room</button>
+
+			<!-- right -->
+			<button class="tablinks viewlinks right" onclick="openView(event, 'home')">Help</button>
+			<button class="tablinks viewlinks right" onclick="openView(event, 'home')">About</button>
+
+		</nav>
+
+	</header>
+
+	<section id="home" class="view show">
+
+		<div id="header_section">
+			<h2 id="room_name">#</h2>
+			<div id="user_card">
+				<b id="uid"></b>
+				<b id="name">Username : <input type="text" name="name" id="name_input" class="input"></b>
+			</div>
+		</div>
+
+		<div id="screen">
+			
+			<div id="screen_tab">
+
+				<div class="side_screen">
+					<div id="screen_room" class="side_screenContent hideScrollBar tabcontent show"></div>
+	   				<div id="screen_channel" class="side_screenContent hideScrollBar tabcontent"></div>
+					
+				</div>		        
+	   			<div class="tab">
+					<button class="tablinks active" onclick="openTab(event, 'screen_room')">Rooms</button>
+					<button class="tablinks" onclick="openTab(event, 'screen_channel')">Users</button>
+				</div>		
+
+			</div>
+
+        	<div id="screen_messenger" class="">
+        		
+        		<div id="screen_message" class="hideScrollBar"></div>
+
+        		<div id="input_section" class="border">
+		    		<textarea name="message" id="message" class="noborder"></textarea>
+		    		<div id="share" class="">
+		    			<button class="popupLinks" onclick="openPopup(event, 'share_image')">Image</button>
+		    			<button class="popupLinks" onclick="openPopup(event, 'share_video')">Video</button>
+		    			<button class="popupLinks" onclick="openPopup(event, 'share_youtube')">Youtube</button>
+		    		</div>
+		    	</div>
+        	</div>
+
+		</div>
+		
+    </section>
+
+    <!--#include file="section/create_room.section.html" -->
+    <!--#include file="section/manage_room.section.html" -->
+    <!--#include file="section/share_image.section.html" -->
+    <!--#include file="section/share_video.section.html" -->
+    <!--#include file="section/share_youtube.section.html" -->
+
+    
+
+    <section id="SERVER_ALERT_TMP_BAN" class="view" style="text-align:center;padding-top:100px;margin-bottom:-100px;">
+
+		<h2>YOU ARE TEMPORARILY BANNED!</h2>
+		<p id="SERVER_ALERT_TMP_BAN_MESSAGE"></p><br>
+		<p>Laura.</p>
+		
+    </section>
+
+    <section id="SERVER_ALERT_UNBAN" class="view" style="text-align:center;padding-top:100px;margin-bottom:-100px;">
+
+		<h2>YOU ARE UNBANNED!</h2>
+		<p id="SERVER_ALERT_UNBAN_MESSAGE"></p><br>
+		<p>Laura.</p>
+		
+    </section>
+  
+
+    <footer>
+    	
+    </footer>
+
+
+	<script src="lib/jquery.js"></script>
+	<script src="lib/cookies.js"></script>
+	<script src="lib/tab.js"></script>
+	<script src="lib/popup.js"></script>
+	<script src="http://localhost:9888/socket.io/socket.io.js"></script>
+	<script src="index.js"></script>
+
+</body>
+</html>

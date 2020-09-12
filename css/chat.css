@@ -1,0 +1,75 @@
+.message{
+	margin: 20px;
+	border-radius: 10px;
+	padding: 10px;
+	border-left: 2px #f54242 solid;
+
+}
+
+.message>p>img{
+	max-height: 300px;
+	max-width: 500px;
+
+}
+
+.message>b{
+	margin-bottom: -5px;
+}
+
+.message_me{
+
+	border-left: 2px #4290f5 solid;
+}
+
+.room{
+	padding: 10px;
+	background-color: #36593E;
+	color: white;
+	width: 95%;
+	float: right;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	font-size: 20px;
+}
+
+.roomActive{
+	background-color: #f54242;	
+}
+
+#name{
+	display: block;
+	margin-top: 10px;
+}
+#name_input{
+	font-size: 20px;
+	width: 200px;
+}
+
+#room_name_input{
+	
+	font-size: 20px;
+	width: 200px;
+}
+
+.name_valide{
+	color: #36593E;
+}
+
+.name_notValide{
+	color: #BFA36F;
+}
+
+textarea[name=message] {
+  resize: none;
+}
+
+.id{
+	display: block;
+	font-size: 12px;
+}
+
+.activeroom{
+	/*background-color: #5B8C4D;*/
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+}

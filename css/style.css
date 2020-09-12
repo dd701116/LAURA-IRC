@@ -1,0 +1,185 @@
+
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial;
+}
+
+html{
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	width: 80%;
+	height: 90%;
+	margin: auto;
+}
+
+header{
+	margin-bottom: 30px;
+	text-align: center;
+	padding-top: 30px;
+	height: 100px;
+	background-color: #5B8C4D;
+}
+
+header>h1{
+	margin: 10px;
+	color: white;
+}
+
+footer{
+	margin-top: 20px;
+	width: 100%;
+}
+
+nav.tab{
+	width: 100%;
+}
+
+section{
+	width: calc(100% - 50px);
+	height: 650px;
+	margin: auto;
+}
+
+#header_section{
+	margin-bottom: 10px;
+	display: inline-flex;
+	width: 100%;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #BAF2A0;
+}
+
+#room_name{
+	width: 70%;
+	margin-top: 15px;
+}
+
+#user_card{
+	width: 30%;
+}
+
+
+#screen{
+	display: inline-flex;
+	height: 600px;
+	width: 100%;
+}
+
+#screen_messenger{
+	width: calc(80% - 30px);
+	height: 100%;
+	margin-left: 30px;
+}
+
+#screen_message{
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 100%;
+	height: calc(100% - 80px);
+	background-color: white;
+	padding-bottom: 20px;
+}
+
+
+
+#screen_tab{
+	width: 20%;
+	height: 100%;
+}
+
+.side_screen{
+	width: 100%;
+	height: calc(100% - 50px);
+	background-color: #BFA36F;
+	padding-top: 10px;
+}
+#screen_tab>div.tab{
+	height: 45px;
+}
+.side_screenContent{
+	overflow-y: scroll;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hideScrollBar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.hideScrollBar {
+  -ms-overflow-style: none;
+  scrollbar-width:none;
+}
+
+#message{
+	width: 100%;
+	height: 100%;
+	font-size: 20px;
+}
+
+textarea:focus, input:focus, button:focus{
+    outline: none;
+}
+
+.border{
+	border: 1px black solid;
+}
+
+.noborder{
+	border: none;
+}
+
+#input_section{
+	width: 100%;
+	height: 60px;
+	display: inline-flex;
+}
+
+#input_section>textarea{
+	width: 85%;
+}
+
+#input_section>#share{
+	width: 15%;
+	height: 100%;
+}
+
+#input_section>#share>button{
+	width: 100%;
+	height: calc((60px)/3);
+}
+
+.input{
+	border: none;
+	border-bottom: 1px black solid;
+}
+
+.bg_white{
+	background: white;
+}
+
+.bg_black{
+	background: black;
+}
+
+.btn{
+	min-width: 100px;
+	height: 50px;
+	font-size: 20px;
+}
+
+.noblock{
+	display: inline;
+}
+
+.debug{
+	border: 2px red solid;
+	background-color: green;
+}
