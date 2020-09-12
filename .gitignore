@@ -106,3 +106,7 @@ dist
 # Hide deploy folder
 deploy
 deploy/*
+
+# Hide build folder
+build
+build/*

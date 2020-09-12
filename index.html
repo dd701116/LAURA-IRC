@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+	<!-- build:css css/min.css -->
 	<link rel="stylesheet" type="text/css" href="css/tab.css">
 	<link rel="stylesheet" type="text/css" href="css/popup.css">
 	<link rel="stylesheet" type="text/css" href="css/chat.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- endbuild -->
 
 	<meta charset="utf-8">
 
@@ -17,7 +18,7 @@
 
 	<header>
 		<h1>LAURA.IRC</h1>
-		<p><b>(Open beta)</b></p>
+		<p><b>(Open Beta)</b></p>
 
 		<nav class="tab">
 
@@ -107,13 +108,19 @@
     	
     </footer>
 
-
+	<!-- build:js lib/min.js -->
 	<script src="lib/jquery.js"></script>
 	<script src="lib/cookies.js"></script>
 	<script src="lib/tab.js"></script>
 	<script src="lib/popup.js"></script>
+	<!-- endbuild -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
 	<script src="http://localhost:9888/socket.io/socket.io.js"></script>
+
+	<!-- build:js index-min.js -->
 	<script src="index.js"></script>
+	<!-- endbuild -->
 
 </body>
 </html>

@@ -1,0 +1,30 @@
+{
+  "name": "laura-client",
+  "version": "1.0.0",
+  "description": "IRC",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dd701116/LAURA-IRC.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dd701116/LAURA-IRC/issues"
+  },
+  "homepage": "https://github.com/dd701116/LAURA-IRC#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-filter": "^6.0.0",
+    "gulp-livereload": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^2.0.0",
+    "gulp-useref": "^4.0.1"
+  }
+}
